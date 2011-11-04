@@ -11,13 +11,14 @@
 		628F783414642E73004A765E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 628F783214642E73004A765E /* InfoPlist.strings */; };
 		628F783614642E74004A765E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 628F783514642E73004A765E /* main.m */; };
 		628F783A14642E74004A765E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 628F783814642E74004A765E /* Credits.rtf */; };
-		628F783D14642E74004A765E /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 628F783C14642E74004A765E /* Document.m */; };
+		628F783D14642E74004A765E /* Document.mm in Sources */ = {isa = PBXBuildFile; fileRef = 628F783C14642E74004A765E /* Document.mm */; };
 		628F784014642E74004A765E /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 628F783E14642E74004A765E /* Document.xib */; };
 		628F784314642E74004A765E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 628F784114642E74004A765E /* MainMenu.xib */; };
 		628F784B14642E74004A765E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 628F784A14642E74004A765E /* SenTestingKit.framework */; };
 		628F784C14642E74004A765E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 628F782914642E73004A765E /* Cocoa.framework */; };
 		628F785414642E74004A765E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 628F785214642E74004A765E /* InfoPlist.strings */; };
 		628F785714642E74004A765E /* PEGEditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 628F785614642E74004A765E /* PEGEditorTests.m */; };
+		62F1829114648A3200847806 /* Controller.mm in Sources */ = {isa = PBXBuildFile; fileRef = 62F1829014648A3200847806 /* Controller.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,21 +37,23 @@
 		628F782C14642E73004A765E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		628F782D14642E73004A765E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		628F782E14642E73004A765E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		628F783114642E73004A765E /* PEGEditor-Info.plist */ = {isa = PBXFileReference; path = "PEGEditor-Info.plist"; sourceTree = "<group>"; };
+		628F783114642E73004A765E /* PEGEditor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PEGEditor-Info.plist"; sourceTree = "<group>"; };
 		628F783314642E73004A765E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		628F783514642E73004A765E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		628F783714642E74004A765E /* PEGEditor-Prefix.pch */ = {isa = PBXFileReference; path = "PEGEditor-Prefix.pch"; sourceTree = "<group>"; };
+		628F783714642E74004A765E /* PEGEditor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PEGEditor-Prefix.pch"; sourceTree = "<group>"; };
 		628F783914642E74004A765E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		628F783B14642E74004A765E /* Document.h */ = {isa = PBXFileReference; path = Document.h; sourceTree = "<group>"; };
-		628F783C14642E74004A765E /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		628F783B14642E74004A765E /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		628F783C14642E74004A765E /* Document.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Document.mm; sourceTree = "<group>"; };
 		628F783F14642E74004A765E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Document.xib; sourceTree = "<group>"; };
 		628F784214642E74004A765E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		628F784914642E74004A765E /* PEGEditorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PEGEditorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		628F784A14642E74004A765E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		628F785114642E74004A765E /* PEGEditorTests-Info.plist */ = {isa = PBXFileReference; path = "PEGEditorTests-Info.plist"; sourceTree = "<group>"; };
+		628F785114642E74004A765E /* PEGEditorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PEGEditorTests-Info.plist"; sourceTree = "<group>"; };
 		628F785314642E74004A765E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		628F785514642E74004A765E /* PEGEditorTests.h */ = {isa = PBXFileReference; path = PEGEditorTests.h; sourceTree = "<group>"; };
+		628F785514642E74004A765E /* PEGEditorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PEGEditorTests.h; sourceTree = "<group>"; };
 		628F785614642E74004A765E /* PEGEditorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PEGEditorTests.m; sourceTree = "<group>"; };
+		62F1828F14648A3200847806 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
+		62F1829014648A3200847806 /* Controller.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Controller.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +120,9 @@
 			isa = PBXGroup;
 			children = (
 				628F783B14642E74004A765E /* Document.h */,
-				628F783C14642E74004A765E /* Document.m */,
+				628F783C14642E74004A765E /* Document.mm */,
+				62F1828F14648A3200847806 /* Controller.h */,
+				62F1829014648A3200847806 /* Controller.mm */,
 				628F783E14642E74004A765E /* Document.xib */,
 				628F784114642E74004A765E /* MainMenu.xib */,
 				628F783014642E73004A765E /* Supporting Files */,
@@ -140,8 +145,8 @@
 		628F784F14642E74004A765E /* PEGEditorTests */ = {
 			isa = PBXGroup;
 			children = (
-				628F785514642E74004A765E /* PEGEditorTests.h */,
 				628F785614642E74004A765E /* PEGEditorTests.m */,
+				628F785514642E74004A765E /* PEGEditorTests.h */,
 				628F785014642E74004A765E /* Supporting Files */,
 			);
 			path = PEGEditorTests;
@@ -202,6 +207,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Alexandre Cossette";
 			};
 			buildConfigurationList = 628F781F14642E73004A765E /* Build configuration list for PBXProject "PEGEditor" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -265,7 +271,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				628F783614642E74004A765E /* main.m in Sources */,
-				628F783D14642E74004A765E /* Document.m in Sources */,
+				628F783D14642E74004A765E /* Document.mm in Sources */,
+				62F1829114648A3200847806 /* Controller.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +386,7 @@
 		628F785B14642E74004A765E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PEGEditor/PEGEditor-Prefix.pch";
 				INFOPLIST_FILE = "PEGEditor/PEGEditor-Info.plist";
@@ -390,6 +398,7 @@
 		628F785C14642E74004A765E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PEGEditor/PEGEditor-Prefix.pch";
 				INFOPLIST_FILE = "PEGEditor/PEGEditor-Info.plist";
@@ -445,6 +454,7 @@
 				628F785C14642E74004A765E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		628F785D14642E74004A765E /* Build configuration list for PBXNativeTarget "PEGEditorTests" */ = {
 			isa = XCConfigurationList;
@@ -453,6 +463,7 @@
 				628F785F14642E74004A765E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
