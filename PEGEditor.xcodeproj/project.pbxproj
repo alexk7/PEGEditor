@@ -18,6 +18,7 @@
 		628F784C14642E74004A765E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 628F782914642E73004A765E /* Cocoa.framework */; };
 		628F785414642E74004A765E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 628F785214642E74004A765E /* InfoPlist.strings */; };
 		628F785714642E74004A765E /* PEGEditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 628F785614642E74004A765E /* PEGEditorTests.m */; };
+		629C179F14649C7100B66BB5 /* PEGParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 629C179D14649C7100B66BB5 /* PEGParser.cpp */; };
 		62F1829114648A3200847806 /* Controller.mm in Sources */ = {isa = PBXBuildFile; fileRef = 62F1829014648A3200847806 /* Controller.mm */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,8 @@
 		628F785314642E74004A765E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		628F785514642E74004A765E /* PEGEditorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PEGEditorTests.h; sourceTree = "<group>"; };
 		628F785614642E74004A765E /* PEGEditorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PEGEditorTests.m; sourceTree = "<group>"; };
+		629C179D14649C7100B66BB5 /* PEGParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PEGParser.cpp; sourceTree = "<group>"; };
+		629C179E14649C7100B66BB5 /* PEGParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PEGParser.h; sourceTree = "<group>"; };
 		62F1828F14648A3200847806 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
 		62F1829014648A3200847806 /* Controller.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Controller.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +122,8 @@
 		628F782F14642E73004A765E /* PEGEditor */ = {
 			isa = PBXGroup;
 			children = (
+				629C179D14649C7100B66BB5 /* PEGParser.cpp */,
+				629C179E14649C7100B66BB5 /* PEGParser.h */,
 				628F783B14642E74004A765E /* Document.h */,
 				628F783C14642E74004A765E /* Document.mm */,
 				62F1828F14648A3200847806 /* Controller.h */,
@@ -273,6 +278,7 @@
 				628F783614642E74004A765E /* main.m in Sources */,
 				628F783D14642E74004A765E /* Document.mm in Sources */,
 				62F1829114648A3200847806 /* Controller.mm in Sources */,
+				629C179F14649C7100B66BB5 /* PEGParser.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +364,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /opt/local/include;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -378,6 +385,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /opt/local/include;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
 			};

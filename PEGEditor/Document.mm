@@ -7,6 +7,7 @@
 //
 
 #import "Document.h"
+#include "PEGParser.h"
 
 @implementation Document
 @synthesize textView;
@@ -37,6 +38,16 @@
 - (void)textDidChange: (NSNotification *) notification
 {
     text = [[textView string] UTF8String];
+    PEGParser::Iterator i = PEGParser::Traverse(PEGParser::SymbolType_Grammar, text.c_str());
+    bool success = i->success;
+    
+    size_t textLength = text.size();
+    [textView setTextColor:nil range:NSMakeRange(0, textLength)];
+    if (!success)
+    {
+        size_t parsedLength = i->length;
+        [textView setTextColor:[NSColor redColor] range:NSMakeRange(parsedLength, textLength - parsedLength)];
+    }
 }
 
 @end
