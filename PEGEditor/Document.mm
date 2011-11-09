@@ -154,10 +154,14 @@ static void UpdateAttributes(NSTextView* textView, std::map<std::string, NSInteg
     if ([[link scheme] isEqualToString:@"peg"])
     {
         NSString* host = [link host];
-        NSRange range = { locations[[host UTF8String]], [host length] };
-        [textView scrollRangeToVisible:range];
-        [textView showFindIndicatorForRange:range];
-        return YES;
+        Locations::iterator found = locations.find([host UTF8String]);
+        if (found != locations.end())
+        {
+            NSRange range = { found->second, [host length] };
+            [textView scrollRangeToVisible:range];
+            [textView showFindIndicatorForRange:range];
+            return YES;
+        }
     }
     return NO;
 }

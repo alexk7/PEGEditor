@@ -10,11 +10,13 @@
 #include <string>
 #include <map>
 
+typedef std::map<std::string, NSInteger> Locations;
+
 @interface Document : NSDocument
 {
     NSTextView *textView;
     std::string text;
-    std::map<std::string, NSInteger> locations;
+    Locations locations;
 }
 
 @property (strong) IBOutlet NSTextView *textView;
