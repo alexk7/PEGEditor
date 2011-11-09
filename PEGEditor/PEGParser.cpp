@@ -1966,7 +1966,7 @@ Iterator PEGParser::Traverse(const Iterator& _iParent)
 		vector<Symbol> children;
 		bool success = TraverseSymbol(*_iParent.mpContext, symbol.type, p, children);
         if (!success) --p;
-		assert(success == symbol.success && p == symbol.value + symbol.length);
+		assert((!success && !symbol.success) || (success && symbol.success && p == symbol.value + symbol.length));
 		boost::shared_ptr< vector<Symbol> > pChildren;
 		if (!children.empty())
 		{
